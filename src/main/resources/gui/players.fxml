@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="700.0" prefWidth="1300.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button fx:id="resetButton" layoutX="537.0" layoutY="252.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="159.0" text="Resetuj" AnchorPane.rightAnchor="603.8" AnchorPane.topAnchor="241.39999999999998">
+            <font>
+                <Font size="18.0" />
+            </font></Button>
+        <Button fx:id="removeButton" layoutX="537.0" layoutY="177.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="159.0" text="Usuń" AnchorPane.rightAnchor="603.8" AnchorPane.topAnchor="171.39999999999998">
+            <font>
+                <Font size="18.0" />
+            </font></Button>
+        <Label fx:id="errorLabel" layoutX="8.0" layoutY="5.0" prefHeight="18.0" prefWidth="585.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.0">
+            <font>
+                <Font size="11.0" />
+            </font>
+        </Label>
+        <TableView fx:id="table" layoutX="754.0" layoutY="101.0" prefHeight="485.0" prefWidth="562.0" AnchorPane.bottomAnchor="114.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="101.0">
+            <columns>
+                <TableColumn fx:id="player_column" prefWidth="102.59997403621674" text="Gracz" />
+            <TableColumn fx:id="class_column" prefWidth="111.80005645751953" text="Klasa" />
+            <TableColumn fx:id="buff_column" prefWidth="92.39996337890625" text="Żywioł" />
+            <TableColumn fx:id="pot0_column" prefWidth="88.4000244140625" text="M. HP" />
+            <TableColumn fx:id="pot1_column" prefWidth="85.0" text="M. MP" />
+            <TableColumn fx:id="gr_column" prefWidth="75.0" text="Granat" />
+            </columns>
+        </TableView>
+        <Button fx:id="addButton" layoutX="537.0" layoutY="101.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="159.0" text="Dodaj" AnchorPane.rightAnchor="603.8" AnchorPane.topAnchor="101.39999999999998">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Label layoutX="66.0" layoutY="97.0" prefHeight="50.0" prefWidth="159.0" text="Nick gracza:" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="97.0">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nick" layoutX="234.0" layoutY="101.0" prefHeight="42.0" prefWidth="274.0" AnchorPane.leftAnchor="234.0" AnchorPane.rightAnchor="791.6" AnchorPane.topAnchor="101.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+      <Label layoutX="66.0" layoutY="222.0" text="Klasa:" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="222.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Slider fx:id="pot0Slider" layoutX="234.0" layoutY="380.0" prefHeight="18.0" prefWidth="152.0" AnchorPane.leftAnchor="234.0" AnchorPane.topAnchor="380.0" />
+      <Slider fx:id="pot1Slider" layoutX="234.0" layoutY="410.0" prefHeight="18.0" prefWidth="152.0" AnchorPane.leftAnchor="234.0" AnchorPane.topAnchor="410.0" />
+      <Slider fx:id="grSlider" layoutX="234.0" layoutY="440.0" prefHeight="18.0" prefWidth="152.0" AnchorPane.leftAnchor="234.0" AnchorPane.topAnchor="440.0" />
+      <Label layoutX="66.0" layoutY="331.0" text="Przedmioty:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="379.0" text="Mikstura zdrowia">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="409.0" text="Mikstura many">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="66.0" layoutY="439.0" text="Granat">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="pot0Label" layoutX="396.0" layoutY="380.0" prefHeight="18.0" prefWidth="74.0" text="0" AnchorPane.leftAnchor="396.0" AnchorPane.topAnchor="380.0" />
+      <Label fx:id="pot1Label" layoutX="396.0" layoutY="411.0" prefHeight="18.0" prefWidth="74.0" text="0" AnchorPane.leftAnchor="396.0" AnchorPane.topAnchor="411.0" />
+      <Label fx:id="grLabel" layoutX="396.0" layoutY="441.0" prefHeight="18.0" prefWidth="74.0" text="0" AnchorPane.leftAnchor="396.0" AnchorPane.topAnchor="441.0" />
+      <Label layoutX="66.0" layoutY="270.0" text="Żywioł:" AnchorPane.leftAnchor="66.0" AnchorPane.topAnchor="270.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="classSpinner" layoutX="234.0" layoutY="222.0" prefHeight="35.0" prefWidth="274.0" AnchorPane.leftAnchor="234.0" AnchorPane.rightAnchor="791.6" AnchorPane.topAnchor="222.0" />
+      <Spinner fx:id="buffSpinner" layoutX="234.0" layoutY="270.0" prefHeight="35.0" prefWidth="274.0" AnchorPane.leftAnchor="234.0" AnchorPane.rightAnchor="791.6" AnchorPane.topAnchor="270.0" />
+      <Button fx:id="startButton" layoutX="536.0" layoutY="625.0" mnemonicParsing="false" text="START" AnchorPane.bottomAnchor="20.600000000000023" AnchorPane.leftAnchor="536.0" AnchorPane.rightAnchor="536.0" />
+      <Button fx:id="generateButton" layoutX="234.0" layoutY="151.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="274.0" text="Wygeneruj nick" AnchorPane.leftAnchor="234.0" AnchorPane.rightAnchor="791.6" AnchorPane.topAnchor="151.0" />
+    </children>
+</AnchorPane>

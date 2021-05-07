@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="mainPane" prefHeight="568.0" prefWidth="469.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button fx:id="startButton" layoutX="77.0" layoutY="122.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="131.0" text="ROZPOCZNIJ GRĘ" textAlignment="CENTER" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.80000000000001" AnchorPane.topAnchor="122.0">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Button>
+        <Text fontSmoothingType="LCD" layoutY="72.0" stroke="#2f2f31" strokeType="OUTSIDE" strokeWidth="0.0" text="RPG" textAlignment="CENTER" wrappingWidth="468.99999999999994" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.6843418860808015E-14" AnchorPane.topAnchor="28.443359375">
+            <font>
+                <Font name="GothicE" size="69.0" />
+            </font>
+         <fill>
+            <LinearGradient endX="0.5763358633026822" endY="0.007633574136340915" startY="0.8091603344633379">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+        </Text>
+      <Button fx:id="classButton" layoutX="77.0" layoutY="192.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="242.0" text="KLASY" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.60000000000002" AnchorPane.topAnchor="192.0" />
+      <Button fx:id="elementButton" layoutX="77.0" layoutY="262.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="242.0" text="ŻYWIOŁY" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.60000000000002" AnchorPane.topAnchor="262.0" />
+      <Button fx:id="itemButton" layoutX="77.0" layoutY="332.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="242.0" text="PRZEDMIOTY" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.60000000000002" AnchorPane.topAnchor="332.0" />
+      <Button fx:id="enemyButton" layoutX="77.0" layoutY="408.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="314.0" text="PRZECIWNICY" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.60000000000002" AnchorPane.topAnchor="402.0" />
+    </children>
+</AnchorPane>

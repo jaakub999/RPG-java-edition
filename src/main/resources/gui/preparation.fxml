@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="700.0" prefWidth="1300.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <Text layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panel Mistrza Gry" textAlignment="CENTER" wrappingWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.15234375">
+        <font>
+            <Font name="System Bold" size="36.0" />
+        </font>
+        <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+                <stops>
+                    <Stop>
+                        <color>
+                            <Color red="0.1666666716337204" green="1.0" />
+                        </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                        <color>
+                            <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                    </Stop>
+                </stops>
+            </LinearGradient>
+        </fill>
+    </Text>
+    <Button fx:id="backButton" layoutX="14.0" layoutY="646.0" mnemonicParsing="false" text="&lt; Wróć" AnchorPane.bottomAnchor="14.799999999999955" AnchorPane.leftAnchor="14.0" />
+    <TableView fx:id="playerTable" layoutX="63.0" layoutY="99.0" prefHeight="448.0" prefWidth="366.0" AnchorPane.bottomAnchor="153.0" AnchorPane.leftAnchor="63.0" AnchorPane.topAnchor="99.0">
+        <columns>
+            <TableColumn fx:id="selectPlayerColumn" prefWidth="39.39996337890625" />
+            <TableColumn fx:id="playerColumn" prefWidth="288.60003662109375" text="Bohaterowie" />
+        </columns>
+    </TableView>
+    <TableView fx:id="enemyTable" editable="true" layoutX="830.0" layoutY="109.0" prefHeight="448.0" prefWidth="382.0" AnchorPane.bottomAnchor="153.0" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="99.0">
+        <columns>
+            <TableColumn fx:id="selectEnemyColumn" editable="false" prefWidth="39.39996337890625" />
+            <TableColumn fx:id="enemyColumn" editable="false" prefWidth="246.80004119873047" text="Przeciwnicy" />
+         <TableColumn fx:id="quantityColumn" prefWidth="70.5999755859375" text="Ilość" />
+        </columns>
+    </TableView>
+   <CheckBox fx:id="selectAllPlayers" layoutX="63.0" layoutY="571.0" mnemonicParsing="false" text="Zaznacz wszystko" textFill="WHITE" AnchorPane.bottomAnchor="110.6" AnchorPane.leftAnchor="63.0">
+      <font>
+         <Font size="16.0" />
+      </font></CheckBox>
+   <CheckBox fx:id="selectAllEnemies" layoutX="871.0" layoutY="564.0" mnemonicParsing="false" text="Zaznacz wszystko" textFill="WHITE" AnchorPane.bottomAnchor="110.60000000000005" AnchorPane.rightAnchor="273.8">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </CheckBox>
+   <Button fx:id="startButton" layoutX="578.0" layoutY="492.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="144.0" text="START" AnchorPane.bottomAnchor="153.6" AnchorPane.leftAnchor="578.0" AnchorPane.rightAnchor="578.0" />
+   <Slider fx:id="chanceSlider" layoutX="545.0" layoutY="232.0" prefHeight="16.0" prefWidth="209.0" AnchorPane.leftAnchor="545.0" AnchorPane.rightAnchor="545.4" AnchorPane.topAnchor="232.0" />
+   <Label layoutX="551.0" layoutY="193.0" text="Szanasa na ucieczkę:" AnchorPane.leftAnchor="551.0" AnchorPane.topAnchor="193.0">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <Label fx:id="chanceLabel" layoutX="709.0" layoutY="192.0" prefHeight="26.0" prefWidth="48.0" text="0%" AnchorPane.rightAnchor="553.0" AnchorPane.topAnchor="193.0">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+    <Label fx:id="errorLabel" layoutX="8.0" layoutY="5.0" prefHeight="18.0" prefWidth="585.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.0">
+        <font>
+            <Font size="11.0" />
+        </font>
+    </Label>
+   <Text fx:id="text" fill="WHITE" layoutX="303.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W trakcie walki" textAlignment="CENTER" visible="false" AnchorPane.leftAnchor="303.0" AnchorPane.rightAnchor="304.9375" AnchorPane.topAnchor="240.40625">
+      <font>
+         <Font name="System Bold" size="96.0" />
+      </font>
+   </Text>
+</AnchorPane>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="700.0" prefWidth="1300.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="spellTable" layoutX="452.0" layoutY="121.0" prefHeight="509.0" prefWidth="366.0" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="452.0" AnchorPane.topAnchor="121.0">
+        <columns>
+          <TableColumn fx:id="selectColumn" prefWidth="39.39996337890625" />
+          <TableColumn fx:id="spellColumn" prefWidth="288.60003662109375" text="Umiejętności" />
+        </columns>
+      </TableView>
+       <Text layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panel Mistrza Gry" textAlignment="CENTER" wrappingWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.15234375">
+           <font>
+               <Font name="System Bold" size="36.0" />
+           </font>
+           <fill>
+               <LinearGradient endX="1.0" endY="1.0">
+                   <stops>
+                       <Stop>
+                           <color>
+                               <Color red="0.1666666716337204" green="1.0" />
+                           </color>
+                       </Stop>
+                       <Stop offset="1.0">
+                           <color>
+                               <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                       </Stop>
+                   </stops>
+               </LinearGradient>
+           </fill>
+       </Text>
+       <TextField fx:id="name" layoutX="140.0" layoutY="130.0" prefHeight="42.0" prefWidth="274.0" AnchorPane.leftAnchor="140.0" AnchorPane.topAnchor="130.0">
+           <font>
+               <Font size="18.0" />
+           </font>
+       </TextField>
+      <Label layoutX="46.0" layoutY="134.0" prefHeight="35.0" prefWidth="89.0" text="Nazwa:" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="134.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <Label layoutX="44.0" layoutY="272.0" text="HP:" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="272.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="hp" layoutX="138.0" layoutY="269.0" prefHeight="42.0" prefWidth="274.0" text="0" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="269.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <TextField fx:id="mp" layoutX="138.0" layoutY="317.0" prefHeight="42.0" prefWidth="274.0" text="0" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="317.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="44.0" layoutY="320.0" text="MP:" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="320.0">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+       <Label fx:id="errorLabel" layoutX="8.0" layoutY="5.0" prefHeight="18.0" prefWidth="585.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.0">
+           <font>
+               <Font size="11.0" />
+           </font>
+       </Label>
+      <Button fx:id="addButton" layoutX="39.0" layoutY="488.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="136.0" text="Dodaj" AnchorPane.leftAnchor="39.0" AnchorPane.topAnchor="488.0" />
+       <Button fx:id="backButton" layoutX="14.0" layoutY="646.0" mnemonicParsing="false" text="&lt; Wróć" AnchorPane.bottomAnchor="14.799999999999955" AnchorPane.leftAnchor="14.0" />
+      <TableView fx:id="enemyTable" layoutX="864.0" layoutY="121.0" prefHeight="509.0" prefWidth="416.0" AnchorPane.bottomAnchor="70.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="121.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="122.59997248649597" text="Nazwa" />
+          <TableColumn fx:id="hpColumn" prefWidth="71.0" text="HP" />
+            <TableColumn fx:id="mpColumn" prefWidth="71.0" text="MP" />
+            <TableColumn fx:id="adColumn" prefWidth="71.0" text="AD" />
+            <TableColumn fx:id="apColumn" prefWidth="71.0" text="AP" />
+        </columns>
+      </TableView>
+      <CheckBox fx:id="selectAllBox" layoutX="452.0" layoutY="641.0" mnemonicParsing="false" text="Zaznacz wszystko" textFill="WHITE" AnchorPane.bottomAnchor="33.4" AnchorPane.leftAnchor="452.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="44.0" layoutY="368.0" text="AD:" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="368.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ad" layoutX="138.0" layoutY="365.0" prefHeight="42.0" prefWidth="274.0" text="0" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="365.0">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Label layoutX="44.0" layoutY="416.0" text="AP:" AnchorPane.leftAnchor="44.0" AnchorPane.topAnchor="416.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ap" layoutX="138.0" layoutY="413.0" prefHeight="42.0" prefWidth="274.0" text="0" AnchorPane.leftAnchor="138.0" AnchorPane.topAnchor="413.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="removeButton" layoutX="276.0" layoutY="488.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="136.0" text="Usuń" AnchorPane.leftAnchor="276.0" AnchorPane.topAnchor="488.0" />
+      <Button fx:id="generateName" layoutX="139.0" layoutY="186.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="274.0" text="Wygeneruj nazwę" AnchorPane.leftAnchor="139.0" AnchorPane.topAnchor="186.0" />
+   </children>
+</AnchorPane>

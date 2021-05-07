@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="700.0" prefWidth="1300.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="table" layoutX="754.0" layoutY="101.0" prefHeight="485.0" prefWidth="750.0" AnchorPane.bottomAnchor="114.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="101.0">
+         <columns>
+            <TableColumn fx:id="selectColumn" prefWidth="33.000001430511475" />
+            <TableColumn fx:id="playerColumn" prefWidth="97.20000457763672" text="Gracz" />
+            <TableColumn fx:id="classColumn" prefWidth="98.0" text="Klasa" />
+            <TableColumn fx:id="buffColumn" prefWidth="100.79998779296875" text="Żywioł" />
+            <TableColumn fx:id="pot0Column" prefWidth="91.5999755859375" text="M. HP" />
+            <TableColumn fx:id="pot1Column" prefWidth="90.00009155273438" text="M. MP" />
+            <TableColumn fx:id="grColumn" prefWidth="87.0" text="Granat" />
+            <TableColumn fx:id="hpColumn" prefWidth="73.7999267578125" text="HP" />
+            <TableColumn fx:id="mpColumn" prefWidth="72.39990234375" text="MP" />
+         </columns>
+      </TableView>
+      <Text layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panel Mistrza Gry" textAlignment="CENTER" wrappingWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.15234375">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.1666666716337204" green="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Label layoutX="115.0" layoutY="109.0" prefHeight="54.0" prefWidth="122.0" text="Mikstura zdrowia" textAlignment="CENTER" AnchorPane.leftAnchor="115.0" AnchorPane.topAnchor="109.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="180.0" prefHeight="54.0" prefWidth="106.0" text="Mikstura many" textAlignment="CENTER" AnchorPane.leftAnchor="123.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button id="increment" fx:id="pot0minus" layoutX="52.0" layoutY="101.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="63.0" text="-" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="101.0" />
+      <Button id="increment" fx:id="pot1minus" layoutX="52.0" layoutY="172.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="63.0" text="-" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="172.0" />
+      <Button id="increment" fx:id="grminus" layoutX="52.0" layoutY="242.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="63.0" text="-" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="242.0" />
+      <Button id="increment" fx:id="pot0plus" layoutX="238.0" layoutY="101.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="63.0" text="+" AnchorPane.leftAnchor="238.0" AnchorPane.topAnchor="101.0" />
+      <Button id="increment" fx:id="pot1plus" layoutX="238.0" layoutY="172.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="63.0" text="+" AnchorPane.leftAnchor="238.0" AnchorPane.topAnchor="172.0" />
+      <Button id="increment" fx:id="grplus" layoutX="238.0" layoutY="242.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="63.0" text="+" AnchorPane.leftAnchor="238.0" AnchorPane.topAnchor="242.0" />
+      <Label layoutX="152.0" layoutY="264.0" text="Granat" AnchorPane.leftAnchor="152.0" AnchorPane.topAnchor="264.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="pvpButton" layoutX="322.0" layoutY="161.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="194.0" text="Gracz vs Gracz" AnchorPane.leftAnchor="322.0" AnchorPane.topAnchor="161.0" />
+      <Button fx:id="pvnpcButton" layoutX="322.0" layoutY="234.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="194.0" text="Gracz vs NPC" AnchorPane.leftAnchor="322.0" AnchorPane.topAnchor="234.0" />
+      <Label layoutX="322.0" layoutY="120.0" text="Walka" AnchorPane.leftAnchor="322.0" AnchorPane.topAnchor="120.00000000000003">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="createButton" layoutX="76.0" layoutY="505.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="194.0" text="Stwórz przeciwnika" AnchorPane.leftAnchor="76.0" AnchorPane.topAnchor="505.0" />
+      <Button fx:id="hpButton" layoutX="76.0" layoutY="365.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="194.0" text="Zregeneruj zdrowie" AnchorPane.leftAnchor="76.0" AnchorPane.topAnchor="365.0" />
+      <Button fx:id="mpButton" layoutX="76.0" layoutY="435.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="194.0" text="Zregeneruj manę" AnchorPane.leftAnchor="76.0" AnchorPane.topAnchor="435.0" />
+      <CheckBox fx:id="selectAllBox" layoutX="538.0" layoutY="598.0" mnemonicParsing="false" text="Zaznacz wszystko" textFill="WHITE" AnchorPane.bottomAnchor="76.39999999999998" AnchorPane.rightAnchor="608.4">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="diceButton" layoutX="79.0" layoutY="574.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="194.0" text="Rzut kością" AnchorPane.leftAnchor="76.0" AnchorPane.topAnchor="575.0" />
+      <Slider fx:id="diceSlider" layoutX="76.0" layoutY="643.0" prefHeight="16.0" prefWidth="162.0" AnchorPane.leftAnchor="76.0" AnchorPane.topAnchor="643.0" />
+      <Label fx:id="diceLabel" layoutX="249.0" layoutY="642.0" prefHeight="18.0" prefWidth="20.0" text="1" AnchorPane.leftAnchor="249.0" AnchorPane.topAnchor="643.0" />
+   </children>
+</AnchorPane>

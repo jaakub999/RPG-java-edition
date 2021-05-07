@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="700.0" prefWidth="1300.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="stats" editable="false" layoutX="320.0" layoutY="40.0" prefHeight="459.0" prefWidth="952.0" AnchorPane.bottomAnchor="200.8" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="40.0" />
+      <Text fx:id="hero" fill="#00ff5a" layoutX="53.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="219.00000762939453" AnchorPane.leftAnchor="53.0" AnchorPane.topAnchor="23.0224609375">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="attackButton" layoutX="80.0" layoutY="93.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="162.0" text="Atak" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="90.0" />
+      <Button fx:id="skillsButton" layoutX="82.0" layoutY="155.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="162.0" text="Umiejętności" AnchorPane.leftAnchor="82.0" AnchorPane.topAnchor="155.0" />
+      <Button fx:id="itemsButton" layoutX="80.0" layoutY="218.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="162.0" text="Przedmioty" AnchorPane.leftAnchor="82.0" AnchorPane.topAnchor="220.0" />
+      <TableView fx:id="table" layoutX="59.0" layoutY="80.0" prefHeight="326.0" prefWidth="219.0" visible="false" AnchorPane.leftAnchor="57.0" AnchorPane.topAnchor="80.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="113.5999870300293" />
+            <TableColumn fx:id="secondColumn" prefWidth="46.800018310546875" />
+            <TableColumn fx:id="thirdColumn" prefWidth="45.199981689453125" />
+        </columns>
+      </TableView>
+      <ListView fx:id="personList" layoutX="177.0" layoutY="186.0" prefHeight="326.0" prefWidth="219.0" visible="false" AnchorPane.leftAnchor="57.0" AnchorPane.topAnchor="80.0" />
+      <Button fx:id="confirmButton" layoutX="82.0" layoutY="432.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="162.0" text="Zatwierdź" visible="false" AnchorPane.leftAnchor="82.0" AnchorPane.topAnchor="432.0" />
+      <Button fx:id="cancelButton" layoutX="81.0" layoutY="496.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="162.0" text="Odrzuć" visible="false" AnchorPane.leftAnchor="82.0" AnchorPane.topAnchor="496.0" />
+      <TextArea fx:id="logs" editable="false" layoutX="320.0" layoutY="520.0" prefHeight="160.0" prefWidth="952.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="28.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextArea>
+      <Ellipse fx:id="ellipse" layoutX="650.0" layoutY="350.0" radiusX="342.0" radiusY="235.0" stroke="#292929" strokeType="INSIDE" visible="false" AnchorPane.bottomAnchor="115.0" AnchorPane.leftAnchor="308.0" AnchorPane.rightAnchor="308.0" AnchorPane.topAnchor="115.0">
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.46261681351706246">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.16078431904315948" green="0.16078431904315948" blue="0.16078431904315948" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Ellipse>
+      <Text fx:id="endingText" fill="#00ff5a" layoutX="340.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" visible="false" wrappingWidth="620.0" AnchorPane.bottomAnchor="237.0" AnchorPane.leftAnchor="340.0" AnchorPane.rightAnchor="340.0" AnchorPane.topAnchor="237.0">
+         <font>
+            <Font name="System Bold" size="78.0" />
+         </font>
+      </Text>
+      <Button fx:id="continueButton" layoutX="562.0" layoutY="448.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="175.0" text="Kontynuuj" visible="false" AnchorPane.bottomAnchor="204.8" AnchorPane.leftAnchor="562.0" AnchorPane.rightAnchor="562.8" />
+      <Button fx:id="escapeButton" layoutX="80.0" layoutY="632.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="162.0" text="Ucieczka" visible="false" AnchorPane.bottomAnchor="20.799999999999997" AnchorPane.leftAnchor="80.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="mainPane" prefHeight="568.0" prefWidth="469.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button fx:id="warriorButton" layoutX="77.0" layoutY="26.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="314.0" text="Wojownik" textAlignment="CENTER" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="78.0" AnchorPane.topAnchor="26.0" />
+        <Button fx:id="mageButton" layoutX="77.0" layoutY="96.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="242.0" text="Mag" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.60000000000002" AnchorPane.topAnchor="96.0" />
+        <Button fx:id="assassinButton" layoutX="77.0" layoutY="166.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="242.0" text="Skrytobójca" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.60000000000002" AnchorPane.topAnchor="166.0" />
+        <Button fx:id="paladinButton" layoutX="77.0" layoutY="236.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="242.0" text="Paladyn" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.60000000000002" AnchorPane.topAnchor="236.0" />
+        <Button fx:id="tankButton" layoutX="77.0" layoutY="306.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="314.0" text="Osiłek" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.60000000000002" AnchorPane.topAnchor="306.0" />
+      <Button fx:id="fighterButton" layoutX="77.0" layoutY="372.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="314.0" text="Pięściarz" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.60000000000002" AnchorPane.topAnchor="376.0" />
+      <Button fx:id="rogueButton" layoutX="77.0" layoutY="438.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="314.0" text="Łotrzyk" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.60000000000002" AnchorPane.topAnchor="446.0" />
+      <Button fx:id="backButton" layoutX="-13.0" layoutY="513.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" text="&lt; Powrót" AnchorPane.bottomAnchor="0.6000000000000227" AnchorPane.leftAnchor="-13.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

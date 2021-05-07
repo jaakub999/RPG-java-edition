@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainPane" prefHeight="700.0" prefWidth="1300.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <Text layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panel Mistrza Gry" textAlignment="CENTER" wrappingWidth="1300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.15234375">
+        <font>
+            <Font name="System Bold" size="36.0" />
+        </font>
+        <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+                <stops>
+                    <Stop>
+                        <color>
+                            <Color red="0.1666666716337204" green="1.0" />
+                        </color>
+                    </Stop>
+                    <Stop offset="1.0">
+                        <color>
+                            <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                    </Stop>
+                </stops>
+            </LinearGradient>
+        </fill>
+    </Text>
+    <Button fx:id="backButton" layoutX="14.0" layoutY="646.0" mnemonicParsing="false" text="&lt; Wróć" AnchorPane.bottomAnchor="14.799999999999955" AnchorPane.leftAnchor="14.0" />
+    <TableView fx:id="team1" layoutX="63.0" layoutY="99.0" prefHeight="448.0" prefWidth="366.0" AnchorPane.bottomAnchor="153.0" AnchorPane.leftAnchor="63.0" AnchorPane.topAnchor="99.0">
+        <columns>
+            <TableColumn fx:id="selectPlayerColumn1" prefWidth="39.39996337890625" />
+            <TableColumn fx:id="teamColumn1" prefWidth="288.60003662109375" text="Drużyna 1" />
+        </columns>
+    </TableView>
+    <CheckBox fx:id="selectAllPlayers1" layoutX="63.0" layoutY="571.0" mnemonicParsing="false" text="Zaznacz wszystko" textFill="WHITE" AnchorPane.bottomAnchor="110.6" AnchorPane.leftAnchor="63.0">
+        <font>
+            <Font size="16.0" />
+        </font></CheckBox>
+    <CheckBox fx:id="selectAllPlayers2" layoutX="871.0" layoutY="564.0" mnemonicParsing="false" text="Zaznacz wszystko" textFill="WHITE" AnchorPane.bottomAnchor="110.60000000000005" AnchorPane.rightAnchor="273.8">
+        <font>
+            <Font size="16.0" />
+        </font>
+    </CheckBox>
+    <Button fx:id="startButton" layoutX="578.0" layoutY="492.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="144.0" text="START" AnchorPane.bottomAnchor="153.6" AnchorPane.leftAnchor="578.0" AnchorPane.rightAnchor="578.0" />
+    <Text fx:id="text" fill="WHITE" layoutX="303.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0" text="W trakcie walki" textAlignment="CENTER" visible="false" AnchorPane.leftAnchor="303.0" AnchorPane.rightAnchor="304.9375" AnchorPane.topAnchor="240.40625">
+        <font>
+            <Font name="System Bold" size="96.0" />
+        </font>
+    </Text>
+   <TableView fx:id="team2" layoutX="880.0" layoutY="80.0" prefHeight="448.0" prefWidth="366.0" AnchorPane.bottomAnchor="153.0" AnchorPane.rightAnchor="63.0" AnchorPane.topAnchor="99.0">
+      <columns>
+         <TableColumn fx:id="selectPlayerColumn2" prefWidth="39.39996337890625" />
+         <TableColumn fx:id="teamColumn2" prefWidth="288.60003662109375" text="Drużyna 1" />
+      </columns>
+   </TableView>
+    <Label fx:id="errorLabel" layoutX="8.0" layoutY="5.0" prefHeight="18.0" prefWidth="585.0" AnchorPane.leftAnchor="8.0" AnchorPane.topAnchor="5.0">
+        <font>
+            <Font size="11.0" />
+        </font>
+    </Label>
+</AnchorPane>

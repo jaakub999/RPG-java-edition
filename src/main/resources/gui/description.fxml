@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="mainPane" prefHeight="568.0" prefWidth="469.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Button fx:id="backButton" layoutX="-13.0" layoutY="513.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="140.0" text="&lt; Powrót" AnchorPane.bottomAnchor="0.6000000000000227" AnchorPane.leftAnchor="-13.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+      <TextArea fx:id="desc" editable="false" layoutX="20.0" prefHeight="505.0" prefWidth="447.0" AnchorPane.bottomAnchor="62.39999999999998" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="0.0" />
+    </children>
+</AnchorPane>
