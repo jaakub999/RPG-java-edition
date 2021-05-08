@@ -155,7 +155,7 @@ public class BattlePreparationController implements Initializable {
             }
         }
 
-        if (!allies.isEmpty() && !foes.isEmpty()) {
+        if (!allies.isEmpty() || !foes.isEmpty()) {
             int escape = (int) chanceSlider.getValue();
             BattleController.ITERATION = 0;
             controller = new BattleController(stage0, stage, players, enemies, magic, allies, foes, escape);
