@@ -126,7 +126,7 @@ public class PvpPreparationController implements Initializable {
                 t2.add(players.getPlayers_list().get(player.getName()));
         }
 
-        if (!t1.isEmpty() && !t2.isEmpty()) {
+        if (!t1.isEmpty() || !t2.isEmpty()) {
             boolean check = true;
 
             for (Player player : t1) {
